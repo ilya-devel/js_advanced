@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.link-other-page {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.products-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.products-box .product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.products-box .product .hide-reviews {
+  display: none;
+}
+.products-box .product .show-reviews {
+  display: flex;
+}
+.products-box .product .title {
+  font-size: 24px;
+  font-weight: 900;
+  padding: 2px;
+}
+.products-box .product .title:hover {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+.products-box .product .reviews-box {
+  flex-direction: column;
+  gap: 20px;
+}
+.products-box .product .reviews-box .review {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  border: 1px dotted grey;
+  border-radius: 5px;
+}
+.products-box .product .reviews-box .review p {
+  padding: 5px;
+  align-content: center;
+}
+.products-box .product .reviews-box .review svg {
+  min-width: 25px;
+  max-width: 25px;
+  padding: 5px;
+  border-left: 1px dotted grey;
+}
+.products-box .product .reviews-box .review svg:hover {
+  fill: red;
+}
+
+.form-review {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-review label {
+  font-size: 16px;
+  font-weight: 900;
+}
+.form-review input {
+  padding: 5px;
+}
+.form-review .btn-send-review {
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.form-review .btn-send-review:hover {
+  background-color: black;
+  color: white;
+}
+
+.err-msg {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 150px);
+  background-color: red;
+  opacity: 0.6;
+  width: 300px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.successfully {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 150px);
+  background-color: green;
+  opacity: 0.6;
+  width: 300px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

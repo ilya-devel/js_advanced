@@ -1,0 +1,121 @@
+@import 'variables'
+
+*
+    margin: 0
+    padding: 0
+
+.center
+    width: $width
+    margin-left: auto
+    margin-right: auto
+
+.page-title
+    margin-top: 30px
+    font-size: 30px
+    font-weight: 900
+    text-align: center
+
+.link-other-page
+    margin-top: 10px
+    text-align: right
+
+.products-box
+    margin-top: 50px
+    margin-bottom: 50px
+    text-align: center
+    display: flex
+    flex-direction: column
+    gap: 40px
+
+    .product
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+        .hide-reviews
+            display: none
+
+        .show-reviews
+            display: flex
+
+        .title
+            font-size: 24px
+            font-weight: 900
+            padding: 2px
+
+            &:hover
+                background-color: black
+                color: white
+                border-radius: 5px
+
+        .reviews-box
+            // display: flex
+            flex-direction: column
+            gap: 20px
+
+            .review
+                text-align: left
+                display: flex
+                justify-content: space-between
+                border: 1px dotted grey
+                border-radius: 5px
+
+                p
+                    padding: 5px
+                    align-content: center
+
+                svg
+                    min-width: 25px
+                    max-width: 25px
+                    padding: 5px
+                    border-left: 1px dotted grey
+
+                    &:hover
+                        fill: red
+
+.form-review
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+    label
+        font-size: 16px
+        font-weight: 900
+
+    input
+        padding: 5px
+
+    .btn-send-review
+        border: 1px solid grey
+        padding: 5px
+        border-radius: 5px
+        text-align: center
+
+        &:hover
+            background-color: black
+            color: white
+
+.err-msg
+    position: absolute
+    top: 50px
+    left: calc( 50% - $widthErr/2 )
+    background-color: red
+    opacity: 0.6
+    width: $widthErr
+    padding: 5px
+    text-align: center
+    border-radius: 5px
+    color: white
+
+.successfully
+    position: absolute
+    top: 50px
+    left: calc( 50% - $widthErr/2 )
+    background-color: green
+    opacity: 0.6
+    width: $widthErr
+    padding: 5px
+    text-align: center
+    border-radius: 5px
+    color: white
